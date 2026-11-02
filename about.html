@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ZR Five Star Sports Centre — sport, fitness, training and community.">
+<title>About Us | ZR Five Star Sports Centre</title>
+<style>
+:root{--ink:#101319;--panel:#191e27;--gold:#e3b64b;--red:#9e2632;--paper:#f5f6f8;--muted:#aeb6c2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--ink);color:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}.topbar{background:#090b0f;border-bottom:1px solid #303642;position:sticky;top:0;z-index:20}
+.nav-wrap{max-width:1200px;margin:auto;padding:13px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:11px;min-width:190px}.brand-mark{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,#f4d47b,var(--gold));color:#171717;display:grid;place-items:center;font-weight:900;font-size:21px;box-shadow:0 5px 18px #0006}
+.brand-name strong{display:block;color:var(--gold);font-size:15px;letter-spacing:1.5px;line-height:1.2}.brand-name small{font-size:10px;letter-spacing:2px;color:#d9dce2}
+nav{display:flex;gap:15px;align-items:center;flex-wrap:wrap}nav a{font-size:12px;font-weight:700;color:#e5e7eb;padding:8px 0;border-bottom:2px solid transparent}nav a:hover,nav a[aria-current="page"]{color:var(--gold);border-color:var(--gold)}
+.menu-toggle{display:none;background:transparent;color:#fff;border:1px solid #596170;border-radius:8px;padding:8px 12px;font-weight:700}
+.hero{max-width:1200px;margin:auto;padding:58px 22px 48px;display:grid;grid-template-columns:1fr 1.05fr;align-items:center;gap:42px;min-height:440px}
+.eyebrow{color:var(--gold);font-weight:800;font-size:11px;letter-spacing:2.5px}h1{font-size:clamp(36px,5vw,62px);line-height:1.04;letter-spacing:-1.8px;margin:14px 0 18px}.hero-copy p{max-width:560px;color:#c4cad3;font-size:17px;margin:0 0 27px}
+.btn{display:inline-block;border:0;border-radius:5px;background:var(--gold);color:#151515;padding:13px 20px;font-weight:800;cursor:pointer;transition:.2s}.btn:hover{background:#f3d37c;transform:translateY(-2px)}
+.hero-photo{height:340px;border-radius:16px;overflow:hidden;border:1px solid #343b48;box-shadow:0 20px 50px #0008;position:relative}.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#10131922,transparent)}.hero-photo img{width:100%;height:100%;object-fit:cover}
+.section{max-width:1200px;margin:auto;padding:35px 22px 75px}.section-heading{max-width:760px;margin:0 auto 30px;text-align:center}h2{font-size:clamp(27px,3vw,38px);line-height:1.15;margin:9px 0 10px}.section-heading p{color:var(--muted);margin:0}
+.card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card{background:var(--panel);border:1px solid #303744;border-radius:12px;overflow:hidden;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#9b7a34}.card img{width:100%;height:205px;object-fit:cover;display:block}.card-body{padding:17px 18px 20px}.card h3{margin:0 0 6px;color:var(--gold);font-size:19px}.card p{margin:0;color:#c0c7d1;font-size:14px}
+.contact-section{display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:start}.contact-section .section-heading{grid-column:1/-1;margin-bottom:0}.contact-form,.contact-note{background:var(--panel);border:1px solid #303744;border-radius:12px;padding:24px}.contact-form label{display:block;font-weight:700;font-size:13px;margin-bottom:15px}input,select,textarea{width:100%;margin-top:6px;padding:12px;border:1px solid #48515f;border-radius:6px;background:#10151d;color:white;font:inherit}input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);border-color:var(--gold)}.form-message{color:var(--gold);font-size:14px}.contact-note h3{color:var(--gold);margin-top:0}.contact-note p{color:#c6ccd5;font-size:14px}
+footer{border-top:1px solid #303744;background:#090b0f;padding:27px 22px;text-align:center;color:#aeb6c2;font-size:13px}footer strong{color:var(--gold)}.footer-links{display:flex;justify-content:center;gap:17px;flex-wrap:wrap;margin:10px 0}
+@media(max-width:900px){nav{gap:10px}nav a{font-size:11px}.hero{gap:25px}}
+@media(max-width:720px){.nav-wrap{flex-wrap:wrap}.menu-toggle{display:block}nav{display:none;width:100%;flex-direction:column;align-items:stretch;gap:0;padding:8px 0}nav.open{display:flex}nav a{padding:10px 4px;border-bottom:1px solid #303744}.hero{grid-template-columns:1fr;padding-top:40px;gap:25px}.hero-photo{height:250px;grid-row:1}.card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.contact-section{grid-template-columns:1fr}}
+@media(max-width:480px){.card-grid{grid-template-columns:1fr}.card img{height:220px}h1{font-size:39px}.brand{min-width:0}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="nav-wrap">
+<a class="brand" href="index.html"><span class="brand-mark">ZR</span><span class="brand-name"><strong>FIVE STAR</strong><small>SPORTS CENTRE</small></span></a>
+<button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">MENU ☰</button>
+<nav id="mainNav" aria-label="Main navigation"><a href="index.html" >Home</a>
+<a href="about.html" aria-current="page">About Us</a>
+<a href="facilities.html" >Facilities</a>
+<a href="academy.html" >Training</a>
+<a href="membership.html" >Membership</a>
+<a href="events.html" >Events</a>
+<a href="gallery.html" >Gallery</a>
+<a href="contact.html" >Contact</a></nav>
+</div></header>
+<main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">PLAY • TRAIN • EXCEL</span>
+        <h1>More Than a Sports Centre</h1>
+        <p>ZR Five Star Sports Centre is presented as a welcoming space for sport, fitness, teamwork and personal development.</p>
+        <a class="btn" href="facilities.html">Explore sports</a>
+      </div>
+      <div class="hero-photo"><img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=85" alt="About Us at a sports centre"></div>
+    </section>
+    <section class="section">
+      <div class="section-heading"><span class="eyebrow">ZR FIVE STAR SPORTS CENTRE</span><h2>About Us</h2><p>Our vision is to encourage participation, discipline and excellence through sport. Our mission is to create opportunities for people of different abilities to learn, train and enjoy physical activity.</p></div>
+      <div class="card-grid"><article class="card">
+          <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=85" alt="Teamwork sports photograph" loading="lazy">
+          <div class="card-body"><h3>Teamwork</h3><p>Discover opportunities to participate, practise and improve.</p></div>
+        </article>
+<article class="card">
+          <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=85" alt="Training sports photograph" loading="lazy">
+          <div class="card-body"><h3>Training</h3><p>Discover opportunities to participate, practise and improve.</p></div>
+        </article>
+<article class="card">
+          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=85" alt="Community sports photograph" loading="lazy">
+          <div class="card-body"><h3>Community</h3><p>Discover opportunities to participate, practise and improve.</p></div>
+        </article></div>
+    </section>
+    </main>
+<footer><strong>ZR FIVE STAR SPORTS CENTRE</strong><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="facilities.html">Facilities</a><a href="academy.html">Training</a><a href="membership.html">Membership</a><a href="events.html">Events</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a></div><span>© <span id="year"></span> ZR Five Star Sports Centre. Website demonstration.</span></footer>
+<script>
+const toggle=document.getElementById('menuToggle');
+const nav=document.getElementById('mainNav');
+toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});
+document.getElementById('year').textContent=new Date().getFullYear();
+const form=document.getElementById('contactForm');
+if(form){form.addEventListener('submit',event=>{event.preventDefault();document.getElementById('formMessage').textContent='Your entries look complete. This demo does not send or save the enquiry; please use the centre’s verified contact details.';form.reset();});}
+</script>
+</body></html>
